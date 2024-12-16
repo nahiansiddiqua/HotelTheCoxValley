@@ -1,7 +1,5 @@
 from flask import Flask, render_template ,request
-import time
-import smtplib
-import os
+
 app = Flask(__name__)
 
 @app.route('/')
