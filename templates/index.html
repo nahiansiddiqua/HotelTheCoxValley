@@ -221,10 +221,12 @@
 
 	<section class="site-section" id="section-projects">
 		<div class="container">
-			<div class="row mb-4">
-				<div class="section-heading text-center col-md-12">
-					<h2>Projects</h2>
-				</div>
+			<div class="row">
+				<div class="col-md-12 mb-5"> 
+				    <div class="section-heading text-center">
+					    <h2>Projects</h2>
+				    </div>
+			    </div>
 			</div>
 			<div class="filters lead">
 				<ul>
@@ -248,14 +250,11 @@
 								<div class="overlay overlay-bg"></div>
 								<img class="image img-fluid" src="../static/assets/images/excel.jpg" alt="">
 							</div>
-							<a href="../static/assets/images/excel.jpg" class="img-pop-up">  
-								
-							</a>                                  
+							<a href="../static/assets/images/excel.jpg" class="img-pop-up"></a>                                  
 						</div>
 						<div class="p-inner">
 							<a href="https://github.com/nahiansiddiqua/ExcelExtensions_Project"><h4>Excel Extension</h4>
-							<div class="cat">Manual Testing</div>
-						</a>
+							<div class="cat">Manual Testing</div></a>
 						</div>                                         
 					</div>
 					<div class="single-portfolio col-sm-4 all Automation">
@@ -267,8 +266,7 @@
 							<a href="../static/assets/images/wp.jpg" class="img-pop-up">  
 								<div class="middle">
 									<div class="text align-self-center d-flex"><img src="../static/assets/images/preview.png" alt=""></div>
-								</div>
-							</a>                                  
+								</div></a>                                  
 						</div>
 						<div class="p-inner">
 							<a href="https://github.com/nahiansiddiqua/WPSite_AutomationTest"><h4>WP Dark Mode Automation</h4>
@@ -333,7 +331,7 @@
 								<div class="overlay overlay-bg"></div>
 								<img class="image img-fluid" src="../static/assets/images/post_2.jpg" alt="">
 							</div>
-							<a href="../static/assets/images/post_2.jpg" class="img-pop-up">  
+							    <a href="../static/assets/images/post_2.jpg" class="img-pop-up">  
 								<div class="middle">
 									<div class="text align-self-center d-flex"><img src="../static/assets/images/preview.png" alt=""></div>
 								</div>
@@ -342,8 +340,7 @@
 						<div class="p-inner">
 							<a href="https://github.com/nahiansiddiqua/tour_bd_PythonFlaskProject" target="_blank">
 							<h4>Tour BD</h4>
-							<div class="cat">Website</div>
-						</a>
+							<div class="cat">Website</div></a>
 						</div>
 					</div>
 					<div class="single-portfolio col-sm-4 all load">
@@ -355,14 +352,12 @@
 							<a href="../static/assets/images/load1.png" class="img-pop-up">  
 								<div class="middle">
 									<div class="text align-self-center d-flex"><img src="../static/assets/images/preview.png" alt=""></div>
-								</div>
-							</a>                                
+								</div></a>                                
 						</div>
 						<div class="p-inner">
 							<a href="https://github.com/nahiansiddiqua/LoadTestingUsingJmeter_daraz" target="_blank">
 							<h4>Daraz.com</h4>
-							<div class="cat">Load Testing</div>
-						</a>
+							<div class="cat">Load Testing</div></a>
 						</div>
 					</div>
 					<div class="single-portfolio col-sm-4 all Automation">
@@ -406,24 +401,26 @@
 				</div>
 			</div>
 		</div>
-	</section>
+    </section>
 	<!-- .section -->
 
 	
 	<section class="site-section" id="section-education">
 		<div class="container">
-				<div class="section-heading">
-					<h2 class="mb-5 text-center">Education</h2>
-					
-					<div class="resume-item mb-4">
-						<img src="../static/assets/images/ewu.png" style="filter: brightness(1.3)">
-						<h3 class="pt-5">BSc in Computer Science and Engineering (CSE)</h3>
-						<h3 style="font-size: 20px; color: white">
-							East West University, Dhaka<br>
-						</h3>
-						<span class="date"><span class="icon-calendar"></span> May 2019 - July 2023</span>
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>Education</h2>
 					</div>
 				</div>
+			</div>
+			<div class="resume-item mb-4">
+			    <img src="../static/assets/images/ewu.png" style="filter: brightness(1.3)">
+				<h3 class="pt-5">BSc in Computer Science and Engineering (CSE)</h3>
+				<h3 style="font-size: 20px; color: white">East West University, Dhaka<br></h3>
+				<span class="date"><span class="icon-calendar"></span> May 2019 - July 2023</span>
+			</div>
+				
 		</div>
 	</section> <!-- .section -->
 
@@ -432,8 +429,8 @@
 	<section class="site-section pb-0"  id="section-skills">
 		<div class="container">
 
-			<div class="row mb-4">
-				<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-12 mb-5">
 					<div class="section-heading text-center">
 						<h2>Skills</h2>
 					</div>
@@ -619,6 +616,12 @@
 		  }
 		});
 	  });
+
+
+	  $(window).on('load', function() {
+		$('.grid').isotope('layout');
+	  });
+	
 	  
 	</script>
 
