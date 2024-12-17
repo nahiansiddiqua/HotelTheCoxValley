@@ -160,6 +160,15 @@ a {
     color: #b2c251;
     text-decoration: none; }
 
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.8); /* Optional: Change border color to white */
+}
+
+.navbar-toggler-icon {
+  background-color: rgb(255, 255, 255); /* Change the background color of the toggler icon to white */
+}
+
+
 .parent-nav-link-padding, .site-navbar .navbar-nav > li > a {
   padding: 15px 20px !important; 
   
