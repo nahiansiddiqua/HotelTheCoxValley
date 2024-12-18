@@ -532,10 +532,12 @@ a {
       display: inline-block;
       cursor: pointer;
       padding: 20px;
+      margin: 5px;
       -webkit-transition: .3s all ease;
       -o-transition: .3s all ease;
-      transition: all 0.1s ease;
-      }
+      transition: all 0.3s ease;
+    }
+
       .filters ul li:hover {
         box-shadow: 0 0 15px 5px rgba(243, 35, 240, 0.968); /* Glow effect */
      /* Rounded glow */
@@ -546,7 +548,10 @@ a {
         border-radius: 14px;
       }
       .filters ul li.active {
-        color: #d411b7 ; }
+        color: #d411b7 ; 
+        transform: scale(0.95); /* Adds a "pressed" effect for touch devices */
+      }
+        
 
 .single-portfolio {
   margin-bottom: 50px;

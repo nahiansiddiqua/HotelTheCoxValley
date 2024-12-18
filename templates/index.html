@@ -588,20 +588,33 @@
 	</section>
 
    <script>
+
+
 	$(document).ready(function () {
+		// Initialize Isotope
 		var $grid = $('.grid').isotope({
-		  itemSelector: '.single-portfolio',
-		  layoutMode: 'fitRows',
+			itemSelector: '.single-portfolio',
+			layoutMode: 'fitRows'
 		});
-	  
-		$('.filters ul li').on('click', function () {
-		  $('.filters ul li').removeClass('active');
-		  $(this).addClass('active');
-	  
-		  var filterValue = $(this).attr('data-filter');
-		  $grid.isotope({ filter: filterValue });
+	
+		// Filter items on click/touch
+		var currentFilter = '*'; // Default filter
+		$('.filters ul li').on('click touchstart', function (e) {
+			e.preventDefault();
+	
+			var filterValue = $(this).attr('data-filter');
+			if (currentFilter === filterValue) return; // Skip if the same filter is clicked
+			currentFilter = filterValue;
+	
+			$('.filters ul li').removeClass('active');
+			$(this).addClass('active');
+	
+			$grid.isotope({ filter: filterValue });
 		});
-	  });
+	});
+	
+
+
 
 	document.querySelectorAll('.nav-link').forEach(anchor => {
 		anchor.addEventListener('click', function (e) {
