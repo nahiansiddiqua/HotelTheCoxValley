@@ -353,7 +353,7 @@ a {
     background-clip: text;
     text-emphasis-color: transparent;
     animation: gradient-shift 5s infinite;
-    filter: brightness(1.2); 
+    filter: brightness(1.3); 
   } 
   /* Optional animation for gradient */
   @keyframes gradient-shift {
