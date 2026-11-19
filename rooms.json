@@ -1,0 +1,192 @@
+[
+    {
+        "room_name": "Sea View Family Suit",
+        "category": "A",
+        "price": 5800,
+        "media": [
+            {
+                "type": "image",
+                "path": "assets/images/SeaViewFamilySuit1.jpg"
+            },
+            {
+                "type": "image",
+                "path": "assets/images/SeaViewFamilySuit2.jpg"
+            },
+            {
+                "type": "video",
+                "path": "assets/images/SeaViewFamilySuitVideo1.mp4"
+            }
+        ]
+    },
+    {
+        "room_name": "Sea View Deluxe Couple Bed",
+        "category": "B",
+        "price": 5800,
+        "media": [
+            {
+                "type": "image",
+                "path": "assets/images/SeaViewDeluxCoupleBedPic1.jpg"
+            }
+            {
+                "type": "image",
+                "path": "assets/images/SeaViewDeluxCoupleBedPic2.jpg"
+            },
+            {
+                "type": "video",
+                "path": "assets/images/SeaViewDeluxCoupleBedVideo1.mp4"
+            }
+        ]
+    },
+    {
+        "room_name": "City View King Bed",
+        "category": "C",
+        "price": 4800,
+        "media": [
+            {
+                "type": "image",
+                "path": "assets/images/CityViewKingBed1.jpg"
+            }
+            {
+                "type": "image",
+                "path": "assets/images/CityViewKingBed2.jpg"
+            },
+            {
+                "type": "video",
+                "path": "assets/images/CityViewKingBedVideo1.mp4"
+            }
+        ]
+    },
+    {
+        "room_name": "King Bed- City View",
+        "category": "D",
+        "price": 4000,
+        "media": [
+            {
+                "type": "image",
+                "path": "assets/images/KingBedCityView1.jpg"
+            }
+            {
+                "type": "image",
+                "path": "assets/images/KingBedCityView2.jpg"
+            },
+            {
+                "type": "video",
+                "path": "assets/images/KingBedCityViewVideo1.mp4"
+            }
+        ]
+    },
+    {
+        "room_name": "King Couple",
+        "category": "E",
+        "price": 4200,
+        "media": [
+            {
+                "type": "image",
+                "path": "assets/images/KingCouple1.jpg"
+            }
+            {
+                "type": "image",
+                "path": "assets/images/KingCouple2.jpg"
+            },
+            {
+                "type": "video",
+                "path": "assets/images/KingCoupleVideo1.mp4"
+            }
+        ]
+    },
+    {
+        "room_name": "King Twing City & Hill View",
+        "category": "F",
+        "price": 4800,
+        "media": [
+            {
+                "type": "image",
+                "path": "assets/images/KingTwingCityAndHillView1.jpg"
+            }
+            {
+                "type": "image",
+                "path": "assets/images/KingTwingCityAndHillView2.jpg"
+            },
+            {
+                "type": "video",
+                "path": "assets/images/KingTwingCityAndHillViewVideo1.mp4"
+            }
+        ]
+    },
+    {
+        "room_name": "King Double Bed",
+        "category": "G",
+        "price": 4900,
+        "media": [
+            {
+                "type": "image",
+                "path": "assets/images/KingDoubleBed1.jpg"
+            }
+            {
+                "type": "image",
+                "path": "assets/images/KingDoubleBed2.jpg"
+            },
+            {
+                "type": "video",
+                "path": "assets/images/KingDoubleBedVideo1.mp4"
+            }
+        ]
+    },
+    {
+        "room_name": "King Family Suit",
+        "category": "H",
+        "price": 5800,
+        "media": [
+            {
+                "type": "image",
+                "path": "assets/images/KingFamilySuit1.jpg"
+            }
+            {
+                "type": "image",
+                "path": "assets/images/KingFamilySuit2.jpg"
+            },
+            {
+                "type": "video",
+                "path": "assets/images/KingFamilySuitVideo1.mp4"
+            }
+        ]
+    },
+    {
+        "room_name": "King Three Bed Room",
+        "category": "I",
+        "price": 5800,
+        "media": [
+            {
+                "type": "image",
+                "path": "assets/images/KingThreeBedRoom1.jpg"
+            }
+            {
+                "type": "image",
+                "path": "assets/images/KingThreeBedRoom2.jpg"
+            },
+            {
+                "type": "video",
+                "path": "assets/images/KingThreeBedRoomVideo1.mp4"
+            }
+        ]
+    },
+    {
+        "room_name": "Honeymoon Couple Sea View",
+        "category": "J",
+        "price": 5500,
+        "media": [
+            {
+                "type": "image",
+                "path": "assets/images/HoneymoonCoupleSeaView1.jpg"
+            }
+            {
+                "type": "image",
+                "path": "assets/images/HoneymoonCoupleSeaView2.jpg"
+            },
+            {
+                "type": "video",
+                "path": "assets/images/HoneymoonCoupleSeaViewVideo1.mp4"
+            }
+        ]
+    }
+]
