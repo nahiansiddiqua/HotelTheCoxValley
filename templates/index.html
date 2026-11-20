@@ -215,8 +215,8 @@
 
 
 
-	<section class="site-section" id="section-roomsAndsuites">
-		<div class="container">
+<section class="site-section" id="section-roomsAndsuites">
+	<div class="container">
 			<div class="row">
 				<div class="col-md-12 mb-5"> 
 				    <div class="section-heading text-center">
@@ -239,69 +239,69 @@
 
 				</ul>
 			</div>
+	
 
-			
+		<div class="filters-content">
+			<div class="row grid">
 
-	<div class="filters-content">
-    <div class="row grid">
+				{% for room in rooms %}
 
-        {% for room in rooms %}
+					{% for media in room.media %}
 
-            {% for media in room.media %}
+						<div class="single-portfolio col-sm-4 {{ room.category }}">
 
-            <div class="single-portfolio col-sm-4 {{ room.category }}">
+							<div class="relative">
+								<div class="thumb">
 
-                <div class="relative">
-                    <div class="thumb">
+									<div class="overlay overlay-bg"></div>
 
-                        <div class="overlay overlay-bg"></div>
+									{% if media.type == 'image' %}
 
-                        {% if media.type == 'image' %}
+									<img
+										class="image img-fluid"
+										src="{{ url_for('static', filename=media.path) }}"
+										alt="{{ room.room_name }}"
+									>
 
-                        <img
-                            class="image img-fluid"
-                            src="{{ url_for('static', filename=media.path) }}"
-                            alt="{{ room.room_name }}"
-                        >
+									{% elif media.type == 'video' %}
 
-                        {% elif media.type == 'video' %}
+									<video class="image img-fluid"
+										autoplay muted loop playsinline>
 
-                        <video class="image img-fluid"
-                               autoplay muted loop playsinline>
+										<source
+											src="{{ url_for('static', filename=media.path) }}"
+											type="video/mp4">
 
-                            <source
-                                src="{{ url_for('static', filename=media.path) }}"
-                                type="video/mp4">
+									</video>
 
-                        </video>
+									{% endif %}
 
-                        {% endif %}
+								</div>
+							</div>
 
-                    </div>
-                </div>
+							<div class="p-inner">
+								<h4>{{ room.price }}tk</h4>
 
-                <div class="p-inner">
-                    <h4>{{ room.price }}tk</h4>
+								<div class="cat">
+									{{ room.room_name }}
+								</div>
+							</div>
 
-                    <div class="cat">
-                        {{ room.room_name }}
-                    </div>
-                </div>
+						</div>
 
-            </div>
+					{% endfor %}
 
-            {% endfor %}
+				{% endfor %}
 
-        {% endfor %}
-
-    </div>
-</div>
+			</div>
+		</div>
+	</div>
 </section>
 <!-- .section -->
 
 
 
-	<section class="site-section pb-0 "  id="section-facilities">
+<section class="site-section pb-0 "  id="section-facilities">
 		<div class="container">
 
 			<div class="row">
@@ -316,13 +316,11 @@
 				<div class="col-md-6 col-lg-4 text-left mb-5 ">
 					<div class="site-service-item ">
 						<ul>
-						<li><h3>Round The Clock Room Service</h3></li><br>
-						<li><h3>LED TV with Cable Channel</h3></li><br>
-						<li><h3>24 Hours CCTV Security Surveillance</h3></li>
-					</ul>
+							<li><h3>Round The Clock Room Service</h3></li><br>
+							<li><h3>LED TV with Cable Channel</h3></li><br>
+							<li><h3>24 Hours CCTV Security Surveillance</h3></li>
+					   </ul>
 						 
-					
-						
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4 text-left mb-5">
@@ -330,8 +328,7 @@
 						<ul><li><h3>Urgent Medical Assistance – Doctor On Call</h3></li><br>
 						<li><h3>Hot And Cold Runnig Water</h3></li><br>
 						<li><h3>Air Ticket (Domestic & International)</h3></li></ul>
-						
-						
+					
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4 text-left mb-5">
@@ -364,18 +361,15 @@
 		
 					</div>
 				</div>
-				
-
-				
-
+			
 			</div>
 		</div>
-	</section>
+</section>
 
 
 	
 
-	<section class="site-section" id="section-nearbyAttractions">
+<section class="site-section" id="section-nearbyAttractions">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 mb-5">
@@ -384,7 +378,7 @@
 					</div>
 				</div>
 			</div>
-				<div class="row grid">
+			<div class="row grid">
 					
 					<div class="single-portfolio col-sm-4 ">
 						<div class="relative">
@@ -427,12 +421,12 @@
 						
 						<div class="p-inner">
 							<a href=""><h4>Inani Beach</h4>
-							
-						</div>                                         
-					</div>
+						</div> 
+					</div>                                         
+			</div>
 		
 		</div>
-	</section>
+</section>
 
 
 
